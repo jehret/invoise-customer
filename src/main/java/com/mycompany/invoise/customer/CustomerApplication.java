@@ -1,6 +1,6 @@
 package com.mycompany.invoise.customer;
 
-import com.fasterxml.jackson.datatype.hibernate6.Hibernate6Module;
+import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -15,7 +15,7 @@ public class CustomerApplication {
 	}
 
 	@Bean
-	public Hibernate6Module datatypeHibernateModule() {
-		return new Hibernate6Module();
+	public Hibernate5Module datatypeHibernateModule() {
+		return new Hibernate5Module();
 	}
 }
